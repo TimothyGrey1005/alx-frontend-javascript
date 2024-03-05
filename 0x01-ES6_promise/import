@@ -1,0 +1,2 @@
+ole.log(getFullResponseFromAPI(true));
+console.log(getFullResponseFromAPI(false));
