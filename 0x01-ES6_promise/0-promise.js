@@ -1,10 +1,10 @@
-export default function getResponseFromAPI() {
-  const success = true;
-  return new Promise((resolve, reject) => {
-    if (success) {
-      resolve();
-    } else {
-      reject();
-    }
+function getResponseFromAPI() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const mockResponse = { data: 'Mock API response' };
+      resolve(mockResponse);
+    }, 1000);
   });
 }
+
+export default getResponseFromAPI;
